@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Data Management</title>
+</head>
+<body>
+    <h1>Healthcare Data Management</h1>
+    <form id="patient-form" method="post" action="/add_patient">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender"><br><br>
+        <label for="condition">Condition:</label>
+        <input type="text" id="condition" name="condition"><br><br>
+        <button type="submit">Add Patient</button>
+    </form>
+    <div id="search-section">
+        <form id="search-form" method="post" action="/search_patient">
+            <label for="search">Search by Name:</label>
+            <input type="text" id="search" name="name">
+            <button type="submit">Search Patient</button>
+        </form>
+    </div>
+    <div id="result"></div>
+</body>
+</html>
